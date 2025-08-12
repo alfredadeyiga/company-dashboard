@@ -210,16 +210,16 @@ tbody :hover {
   .btn {
     margin-bottom: 20px;
     font-size: 14px;
-    padding: 10px 10px
-  }
-
-  .link {
-    gap: 5px;
-    left: 10px;
-    top: 34px;
+    padding: 10px 10px;
   }
 
   .link a {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 10px;
     font-size: 14px;
   }
 

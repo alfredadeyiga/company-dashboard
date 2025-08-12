@@ -18,6 +18,12 @@ header {
   overflow-x: hidden;
 }
 
+.chart-container {
+  padding: 2em;
+  max-width: 900px;
+  margin: auto;
+}
+
 .center {
   text-align: center;
   margin-top: 10%;

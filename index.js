@@ -114,7 +114,6 @@ async function loadTable() {
   createTable(tablePage);
 
   searchInput.addEventListener("input", function () {
-    const container = document.querySelector(".container")
     const query = searchInput.value.toLowerCase();
 
     tableHead.forEach((th) => th.classList.remove("active"));
@@ -137,7 +136,6 @@ async function loadTable() {
       createTable(filteredData);
     } else {
       btnDiv.style.display = "inline-block";
-      container.style.overflowX = 'auto'
       createTable(tablePage);
     }
   });

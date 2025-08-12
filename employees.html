@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="format-detection" content="telephone=no, email=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Employee Directory</title>
     <link rel="stylesheet" href="index.css" />
@@ -22,17 +22,19 @@
       />
       <div class="loading" hidden id="loader"></div>
       <p hidden id="match" class="match">No match</p>
-      <table id="employeeTable">
-        <thead>
-          <tr>
-            <th onclick="sortTable(0)">Name</th>
-            <th onclick="sortTable(1)">Department</th>
-            <th onclick="sortTable(2)">Email</th>
-            <th onclick="sortTable(3)">Location</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+      <div class="table-div">
+        <table id="employeeTable">
+          <thead>
+            <tr>
+              <th onclick="sortTable(0)">Name</th>
+              <th onclick="sortTable(1)">Department</th>
+              <th onclick="sortTable(2)">Email</th>
+              <th onclick="sortTable(3)">Location</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
       <a id="export" class="btn">Export</a>
       <div class="page-numbers">
         <div class="page-btn active">1</div>

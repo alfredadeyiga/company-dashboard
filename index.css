@@ -15,7 +15,7 @@ header {
   padding: 2em;
   max-width: 900px;
   margin: auto;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 .center {
@@ -88,6 +88,10 @@ input {
   margin-bottom: 1em;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+.table-div {
+  max-width: 900px;
 }
 
 table {
@@ -190,7 +194,7 @@ tbody :hover {
 .loading {
   width: 80px;
   height: 80px;
-  margin-left: calc(50% - 50px / 2);
+  margin-left: calc(50% - 80px / 2);
   margin-top: 80px;
   border-bottom: 2px solid #607afb;
   border-radius: 9999px;
@@ -211,6 +215,19 @@ tbody :hover {
     margin-bottom: 20px;
     font-size: 14px;
     padding: 10px 10px;
+  }
+
+  input {
+    width: 96.3%
+  }
+
+  .container {
+    max-width: 600px;
+  }
+
+  .table-div {
+    max-width: 600px;
+    overflow-x: auto;
   }
 
   .link {

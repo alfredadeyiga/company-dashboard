@@ -213,6 +213,13 @@ tbody :hover {
   header h1 {
     font-size: 20px;
     margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  .btn {
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 10px 10px
   }
 
   .link {
@@ -241,11 +248,11 @@ tbody :hover {
     height: 80px;
   }
 
-  .employee-info h3{
+  .employee-info h3 {
     font-size: 16px;
   }
 
-  .employee-info p{
+  .employee-info p {
     font-size: 12px;
   }
 }

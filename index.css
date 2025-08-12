@@ -8,10 +8,6 @@ body {
 
 header {
   background-color: #007bff;
-  color: white;
-  display: flex;
-  text-align: center;
-  justify-content: center;
   height: 80px;
 }
 
@@ -30,14 +26,15 @@ header {
 .link {
   position: absolute;
   display: flex;
-  gap: 30px;
-  left: 50px;
+  gap: 40px;
+  left: 80px;
   top: 30px;
 }
 
 .link a {
   text-decoration: none;
   color: #fff;
+  font-size: 18px;
 }
 
 .match {
@@ -210,19 +207,13 @@ tbody :hover {
 }
 
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 20px;
-    margin-top: 30px;
-    margin-left: 20px;
-  }
-
   .btn {
     margin-bottom: 20px;
     font-size: 14px;
     padding: 10px 10px
   }
 
-  .link {
+  /* .link {
     gap: 10px;
     left: 15px;
     top: 34px;
@@ -230,7 +221,7 @@ tbody :hover {
 
   .link a {
     font-size: 12px;
-  }
+  } */
 
   .modal-content {
     margin: 10% auto;

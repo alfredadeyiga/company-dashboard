@@ -213,15 +213,15 @@ tbody :hover {
     padding: 10px 10px
   }
 
-  /* .link {
-    gap: 10px;
-    left: 15px;
+  .link {
+    gap: 5px;
+    left: 10px;
     top: 34px;
   }
 
   .link a {
-    font-size: 12px;
-  } */
+    font-size: 14px;
+  }
 
   .modal-content {
     margin: 10% auto;

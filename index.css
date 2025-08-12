@@ -213,6 +213,11 @@ tbody :hover {
     padding: 10px 10px;
   }
 
+  .link {
+    gap: 20px;
+    left: 40px;
+  }
+
   .link a {
     font-size: 14px;
   }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="link">
+        <a href="index.html">Home</a>
+        <a href="employees.html">Directory</a>
+      </div>
+      <h1>Employee Distribution</h1>
+    </header>
+    <main class="container">
+      <div class="loading" hidden id="loader"></div>
+      <canvas id="barChart"></canvas>
+      <script src="data.js"></script>
+      <script src="index.js"></script>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Directory</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="link">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <h1>Employee Directory</h1>
+    </header>
+    <main class="container">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by name or department..."
+      />
+      <div class="loading" hidden id="loader"></div>
+      <p hidden id="match" class="match">No match</p>
+      <table id="employeeTable">
+        <thead>
+          <tr>
+            <th onclick="sortTable(0)">Name</th>
+            <th onclick="sortTable(1)">Department</th>
+            <th onclick="sortTable(2)">Email</th>
+            <th onclick="sortTable(3)">Location</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <a id="export" class="btn">Export</a>
+      <div class="page-numbers">
+        <div class="page-btn active">1</div>
+        <div class="page-btn">2</div>
+        <div class="page-btn">3</div>
+        <div class="page-btn">4</div>
+        <div class="page-btn">5</div>
+      </div>
+      <script src="data.js"></script>
+      <script src="index.js"></script>
+    </main>
+
+    <div id="employeeModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modalDetails"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -9,6 +9,7 @@
   </head>
   <body>
     <header>
+      <span class="menu">&#9776;</span>
       <div class="link">
         <a href="index.html">Home</a>
         <a href="employees.html">Directory</a>
@@ -17,8 +18,18 @@
     <main class="chart-container">
       <div class="loading" hidden id="loader"></div>
       <canvas id="barChart"></canvas>
-      <script src="data.js"></script>
-      <script src="index.js"></script>
     </main>
+
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-content">
+        <span class="sidebar-close" onclick="closeSidebar()">&times;</span>
+        <div class="links">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+        </div>
+      </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

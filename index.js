@@ -7,6 +7,8 @@ const exportBtn = document.getElementById("export");
 const match = document.getElementById("match");
 const pageBtn = document.querySelectorAll(".page-btn");
 const btnDiv = document.querySelector(".page-numbers");
+const menu = document.querySelector(".menu")
+const sidebar = document.querySelector(".sidebar")
 
 tableHead.forEach((head) => {
   head.addEventListener("click", function () {
@@ -21,6 +23,10 @@ pageBtn.forEach((page) => {
     page.classList.add("active");
   });
 });
+
+menu.addEventListener("click", function () {
+  sidebar.style.display = "block"
+})
 
 document.addEventListener("DOMContentLoaded", () => {
   loader.hidden = false;
@@ -206,5 +212,15 @@ window.addEventListener("keydown", (e) => {
 window.addEventListener("click", (e) => {
   if (e.target.id === "employeeModal") {
     closeModal();
+  }
+});
+
+function closeSidebar() {
+  sidebar.style.display = "none"
+}
+
+window.addEventListener("click", (e) => {
+  if (e.target.id === "sidebar") {
+    closeSidebar();
   }
 });

@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Company Dashboard</title>
-  <link rel="stylesheet" href="index.css" />
-</head>
-<body>
-  <div class="container center">
-    <h1>Welcome to the Company Dashboard</h1>
-    <p>Select a page to get started:</p>
-    <div class="links">
-      <a href="dashboard.html" class="btn">View Dashboard</a>
-      <a href="employees.html" class="btn">Employee Directory</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Dashboard</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="home-header">
+      <span class="menu">&#9776;</span>
+    </header>
+    <div class="container center">
+      <h1>Welcome to the Company Dashboard</h1>
+      <p>Select a page to get started:</p>
+      <div class="links">
+        <a href="dashboard.html" class="btn">View Dashboard</a>
+        <a href="employees.html" class="btn">Employee Directory</a>
+      </div>
     </div>
-  </div>
-</body>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-content">
+        <span class="sidebar-close" onclick="closeSidebar()">&times;</span>
+        <div class="links">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="employees.html">Directory</a>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
